@@ -16,6 +16,6 @@ func _on_boton_volver_pressed():
 	panel_creditos.visible = false 
 
 # 4. FUNCIÓN PARA EL BOTÓN SALIR
-func _on_boton_salir_pressed(): 
+func _on_boton_salir_pressed():
 	print("Saliendo del juego...")
 	get_tree().quit()
