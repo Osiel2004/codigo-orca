@@ -13,7 +13,7 @@ func _on_boton_creditos_pressed():
 
 # 3. FUNCIÓN PARA EL BOTÓN VOLVER (Dentro de Créditos)
 func _on_boton_volver_pressed():
-	panel_creditos.visible = false
+	panel_creditos.visible = false 
 
 # 4. FUNCIÓN PARA EL BOTÓN SALIR
 func _on_boton_salir_pressed():
