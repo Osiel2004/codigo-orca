@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dlp6bijm0ytee"]
+
+[ext_resource type="Script" uid="uid://djg6r51tvm7d8" path="res://CodigoOrca/Scripts/world.gd" id="1_8aaco"]
+[ext_resource type="Texture2D" uid="uid://c7olnhr8hsaws" path="res://CodigoOrca/Art/underwater-fantasy-preview.png" id="2_4e3xa"]
+
+[node name="World" type="Node2D" unique_id=1808898138]
+script = ExtResource("1_8aaco")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=418842244]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=414611377]
+motion_mirroring = Vector2(2688, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=62279037]
+position = Vector2(1.9073486e-06, -0.9999981)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_4e3xa")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=984489900]
+position = Vector2(580, 324)

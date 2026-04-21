@@ -1,21 +1,28 @@
 extends Control
 
-# Corrección: @onready todo junto
+# Referencia al panel de créditos para mostrarlo/ocultarlo
 @onready var panel_creditos = $PanelCreditos
 
-# 1. FUNCIÓN PARA EL BOTÓN JUGAR
-func _on_boton_jugar_pressed():
-	print("Cargando el mundo de Pánfilo...")
+func _ready():
+	# Al iniciar, nos aseguramos de que el panel de créditos esté oculto
+	panel_creditos.visible = false
 
-# 2. FUNCIÓN PARA EL BOTÓN CRÉDITOS
+# 1. BOTÓN JUGAR: La conexión al Mundo
+func _on_boton_jugar_pressed():
+	print("¡Iniciando Código Orca! Pánfilo entra en acción.")
+	# Esta es la función mágica que cambia de la escena del Menú a la del Juego
+	# Asegúrate de que la ruta sea exactamente donde guardaste tu escena del mundo
+	get_tree().change_scene_to_file("res://CodigoOrca/Scenes/Levels/world.tscn")
+
+# 2. BOTÓN CRÉDITOS: Mostrar nombres del equipo
 func _on_boton_creditos_pressed():
 	panel_creditos.visible = true
 
-# 3. FUNCIÓN PARA EL BOTÓN VOLVER (Dentro de Créditos)
+# 3. BOTÓN VOLVER: Regresar al menú principal desde créditos
 func _on_boton_volver_pressed():
-	panel_creditos.visible = false 
+	panel_creditos.visible = false
 
-# 4. FUNCIÓN PARA EL BOTÓN SALIR
+# 4. BOTÓN SALIR: Cerrar la aplicación
 func _on_boton_salir_pressed():
-	print("Saliendo del juego...")
+	print("Saliendo... El Don ha ganado esta vez.")
 	get_tree().quit()
