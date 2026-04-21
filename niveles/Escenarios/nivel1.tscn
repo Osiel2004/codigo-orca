@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://gnlxj5pn2crn"]
+
+[ext_resource type="Script" uid="uid://bollb41usr15q" path="res://niveles/Scripts/nivel1.gd" id="1_77qk4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cdlty"]
+
+[node name="Nivel1" type="Node2D" unique_id=87353510]
+script = ExtResource("1_77qk4")
+
+[node name="floor" type="StaticBody2D" parent="." unique_id=750306643]
+position = Vector2(0, 256)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=1529332275]
+position = Vector2(256, 0)
+shape = SubResource("WorldBoundaryShape2D_cdlty")
+debug_color = Color(0.9866461, 0, 0.32626522, 0.41960785)
+
+[node name="Panfilo Spawn" type="Marker2D" parent="." unique_id=1470352607]
+position = Vector2(64, 64)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2048068664]
+position = Vector2(584, 120)
+
+[node name="railPath" type="Node2D" parent="." unique_id=2074007667]
+position = Vector2(64, 0)
+
+[node name="Marker2D" type="Marker2D" parent="railPath" unique_id=1688686960]
+position = Vector2(240, 160)
+
+[node name="Marker2D2" type="Marker2D" parent="railPath" unique_id=1292359013]
+position = Vector2(240, 88)
+
+[node name="Marker2D3" type="Marker2D" parent="railPath" unique_id=1234444104]
+position = Vector2(240, 24)

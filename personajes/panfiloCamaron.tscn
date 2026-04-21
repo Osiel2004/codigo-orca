@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c2cmig8njr1xv"]
+
+[ext_resource type="Script" uid="uid://bkhcnefof72i6" path="res://niveles/Scripts/creatureScripts/playerControl.gd" id="1_q52op"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v31df"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_q52op"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=399954314]
+script = ExtResource("1_q52op")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1623228829]
+shape = SubResource("CapsuleShape2D_v31df")
+debug_color = Color(0, 0.61078614, 0.635236, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=944627250]
+position = Vector2(0, -4.7683716e-07)
+scale = Vector2(20, 30)
+texture = SubResource("PlaceholderTexture2D_q52op")
