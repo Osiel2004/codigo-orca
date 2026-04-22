@@ -1,25 +1,31 @@
+# Player.gd
 extends CharacterBody2D
 
+var current_rail_index: int = 1 # Empezamos en 'Middle' (índice 1)
+var is_moving: bool = false
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+func _ready():
+	# Nos conectamos al canal global
+	GameEvents.rail_clicked.connect(_on_rail_clicked)
 
+func _on_rail_clicked(target_pos, new_index):
+	# Validar si es adyacente (distancia de 1) y no estamos ya moviéndonos
+	if abs(new_index - current_rail_index) == 1 and not is_moving:
+		jump_to_rail(target_pos, new_index)
 
-func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
+func jump_to_rail(target_pos, new_index):
+	is_moving = true
+	
+	# Creamos un Tween para un movimiento fluido
+	var tween = create_tween()
+	
+	# Efecto de "salto" (Arco): 
+	# Primero movemos la posición X e Y al objetivo
+	tween.tween_property(self, "global_position", target_pos, 0.4)\
+		.set_trans(Tween.TRANS_SINE)\
+		.set_ease(Tween.EASE_OUT)
+	
+	await tween.finished
+	
+	current_rail_index = new_index
+	is_moving = false

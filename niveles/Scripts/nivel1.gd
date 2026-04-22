@@ -1,6 +1,9 @@
 # Lógica Nivel1
 extends Node2D
 
+var player #jugador
+var enemyCreature #criatura
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	creaturePreload()
@@ -14,17 +17,14 @@ func _process(delta: float) -> void:
 	pass
 	
 func creaturePreload(): #precargar criaturas
-	var playerCharacter = preload("res://personajes/panfiloCamaron.tscn") #panfilo (PC)
-	var enemyCreature1 = preload("res://personajes/enemigo1.tscn") #Criatura
-	
-	var player = playerCharacter.instantiate()
+	player = preload("res://personajes/panfiloCamaron.tscn").instantiate() #panfilo (PC)
+	enemyCreature = preload("res://personajes/enemigo1.tscn").instantiate() #Criatura
+	pass
+
+func playerSpawn(): #aparecer Jugador
 	add_child(player)
-	
+	player.set_global_position($railPath/areaMiddle/middleRail.global_position)
 	pass
 
-func playerSpawn(): #generar Criatura
-	
-	pass
-
-func gameSetup(): #inicializar variables de juego
+func gameSetup(): #inicializar variables de juego custom
 	pass

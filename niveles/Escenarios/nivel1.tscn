@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://gnlxj5pn2crn"]
 
 [ext_resource type="Script" uid="uid://bollb41usr15q" path="res://niveles/Scripts/nivel1.gd" id="1_77qk4"]
+[ext_resource type="Script" uid="uid://bp0iu6gbbw83u" path="res://niveles/Escenarios/area_bottom.gd" id="2_qia1t"]
+[ext_resource type="Script" uid="uid://cr7eyef5tb5rg" path="res://niveles/Escenarios/area_middle.gd" id="3_csplp"]
+[ext_resource type="Script" uid="uid://d0mys2kgmj37" path="res://niveles/Escenarios/area_upper.gd" id="4_tgwg2"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cdlty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akyvv"]
+size = Vector2(96, 48)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_csplp"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tgwg2"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3ycmj"]
 
 [node name="Nivel1" type="Node2D" unique_id=87353510]
 script = ExtResource("1_77qk4")
@@ -15,20 +27,56 @@ position = Vector2(256, 0)
 shape = SubResource("WorldBoundaryShape2D_cdlty")
 debug_color = Color(0.9866461, 0, 0.32626522, 0.41960785)
 
-[node name="Panfilo Spawn" type="Marker2D" parent="." unique_id=1470352607]
-position = Vector2(64, 64)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2048068664]
 position = Vector2(584, 120)
 
 [node name="railPath" type="Node2D" parent="." unique_id=2074007667]
 position = Vector2(64, 0)
 
-[node name="Marker2D" type="Marker2D" parent="railPath" unique_id=1688686960]
+[node name="areaBottom" type="Area2D" parent="railPath" unique_id=1632054741]
 position = Vector2(240, 160)
+script = ExtResource("2_qia1t")
 
-[node name="Marker2D2" type="Marker2D" parent="railPath" unique_id=1292359013]
-position = Vector2(240, 88)
+[node name="bottomRail" type="Marker2D" parent="railPath/areaBottom" unique_id=1688686960]
+position = Vector2(8, 0)
 
-[node name="Marker2D3" type="Marker2D" parent="railPath" unique_id=1234444104]
-position = Vector2(240, 24)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="railPath/areaBottom" unique_id=1184064611]
+shape = SubResource("RectangleShape2D_akyvv")
+debug_color = Color(0.4680513, 0.4751928, 0.91425323, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="railPath/areaBottom" unique_id=540695317]
+position = Vector2(8.000008, -7.6293945e-06)
+scale = Vector2(31.999985, 16.000015)
+texture = SubResource("PlaceholderTexture2D_csplp")
+
+[node name="areaMiddle" type="Area2D" parent="railPath" unique_id=1647371530]
+position = Vector2(240, 96)
+script = ExtResource("3_csplp")
+
+[node name="middleRail" type="Marker2D" parent="railPath/areaMiddle" unique_id=1292359013]
+position = Vector2(8, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="railPath/areaMiddle" unique_id=2145858632]
+shape = SubResource("RectangleShape2D_akyvv")
+debug_color = Color(0.6261403, 0.3846524, 0.93058205, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="railPath/areaMiddle" unique_id=1183777778]
+position = Vector2(8.000008, -4.7683716e-07)
+scale = Vector2(31.999985, 15.999999)
+texture = SubResource("PlaceholderTexture2D_tgwg2")
+
+[node name="areaUpper" type="Area2D" parent="railPath" unique_id=2034193057]
+position = Vector2(240, 32)
+script = ExtResource("4_tgwg2")
+
+[node name="upperRail" type="Marker2D" parent="railPath/areaUpper" unique_id=1234444104]
+position = Vector2(8, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="railPath/areaUpper" unique_id=2077037435]
+shape = SubResource("RectangleShape2D_akyvv")
+debug_color = Color(0.62640524, 0.3924628, 0.9123252, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="railPath/areaUpper" unique_id=1064670392]
+position = Vector2(7.999999, 4.7683716e-07)
+scale = Vector2(31.999998, 15.999999)
+texture = SubResource("PlaceholderTexture2D_3ycmj")
