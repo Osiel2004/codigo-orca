@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://djg6r51tvm7d8" path="res://CodigoOrca/Scripts/world.gd" id="1_8aaco"]
 [ext_resource type="Texture2D" uid="uid://c7olnhr8hsaws" path="res://CodigoOrca/Art/underwater-fantasy-preview.png" id="2_4e3xa"]
+[ext_resource type="PackedScene" uid="uid://ciyv0wd7lme75" path="res://CodigoOrca/Scenes/Prefabs/hud.tscn" id="3_4e3xa"]
 
 [node name="World" type="Node2D" unique_id=1808898138]
 script = ExtResource("1_8aaco")
@@ -19,3 +20,5 @@ centered = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=984489900]
 position = Vector2(580, 324)
+
+[node name="HUD" parent="." unique_id=1834670221 instance=ExtResource("3_4e3xa")]

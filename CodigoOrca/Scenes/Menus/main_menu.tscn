@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bgha3lmmcqpkd"]
 
 [ext_resource type="Script" uid="uid://p4u5g5rcm1d4" path="res://CodigoOrca/Scripts/main_menu.gd" id="1_c4o5c"]
-[ext_resource type="Texture2D" uid="uid://co34mrt3homk2" path="res://CodigoOrca/Art/fondo_marino.png" id="2_1yoid"]
+[ext_resource type="Texture2D" uid="uid://bch453cy3kpqt" path="res://CodigoOrca/Art/fondomenu.jpg" id="2_c4o5c"]
 
 [node name="MainMenu" type="Control" unique_id=983962232]
 layout_mode = 3
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_1yoid")
+texture = ExtResource("2_c4o5c")
 expand_mode = 1
 stretch_mode = 6
 
