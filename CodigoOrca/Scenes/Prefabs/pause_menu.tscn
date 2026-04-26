@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ca2i68y4ayjt7"]
+
+[ext_resource type="Script" uid="uid://by67cbnoererh" path="res://CodigoOrca/Scripts/PauseMenu.gd" id="1_s3ist"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=2060328147]
+process_mode = 3
+script = ExtResource("1_s3ist")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=186637396]
+offset_left = 350.0
+offset_top = 101.0
+offset_right = 762.0
+offset_bottom = 427.0
+color = Color(0, 0.019607844, 1, 0.22745098)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1496686636]
+offset_left = 366.0
+offset_top = 131.0
+offset_right = 747.0
+offset_bottom = 392.0
+size_flags_horizontal = 4
+theme_override_constants/separation = 40
+
+[node name="BotonContinuar" type="Button" parent="VBoxContainer" unique_id=529494102]
+layout_mode = 2
+text = "Continuar"
+
+[node name="BotonReiniciar" type="Button" parent="VBoxContainer" unique_id=906890939]
+layout_mode = 2
+text = "Reiniciar"
+
+[node name="BotonOpciones" type="Button" parent="VBoxContainer" unique_id=493687203]
+layout_mode = 2
+text = "Opciones"
+
+[node name="BotonSalir" type="Button" parent="VBoxContainer" unique_id=1956117247]
+layout_mode = 2
+text = "Salir"
+
+[connection signal="pressed" from="VBoxContainer/BotonContinuar" to="." method="_on_boton_continuar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonReiniciar" to="." method="_on_boton_reiniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonOpciones" to="." method="_on_boton_opciones_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]

@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://djg6r51tvm7d8" path="res://CodigoOrca/Scripts/world.gd" id="1_8aaco"]
 [ext_resource type="Texture2D" uid="uid://c7olnhr8hsaws" path="res://CodigoOrca/Art/underwater-fantasy-preview.png" id="2_4e3xa"]
 [ext_resource type="PackedScene" uid="uid://ciyv0wd7lme75" path="res://CodigoOrca/Scenes/Prefabs/hud.tscn" id="3_4e3xa"]
+[ext_resource type="PackedScene" uid="uid://ca2i68y4ayjt7" path="res://CodigoOrca/Scenes/Prefabs/pause_menu.tscn" id="4_6s65c"]
+[ext_resource type="PackedScene" uid="uid://bncr8e3dkeapp" path="res://CodigoOrca/Scenes/Prefabs/GameOver.tscn" id="5_tjsc0"]
 
 [node name="World" type="Node2D" unique_id=1808898138]
 script = ExtResource("1_8aaco")
@@ -22,3 +24,9 @@ centered = false
 position = Vector2(580, 324)
 
 [node name="HUD" parent="." unique_id=1834670221 instance=ExtResource("3_4e3xa")]
+
+[node name="PauseMenu" parent="." unique_id=2060328147 instance=ExtResource("4_6s65c")]
+visible = false
+
+[node name="GameOver" parent="." unique_id=1084479097 instance=ExtResource("5_tjsc0")]
+visible = false

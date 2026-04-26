@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bncr8e3dkeapp"]
+
+[ext_resource type="Script" uid="uid://c2p85r4ihatrr" path="res://CodigoOrca/Scripts/GameOver.gd" id="1_b71ja"]
+
+[node name="GameOver" type="CanvasLayer" unique_id=1084479097]
+process_mode = 3
+script = ExtResource("1_b71ja")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1025034317]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -153.75
+offset_right = 230.0
+offset_bottom = 153.75
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 0.47058824)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1163623393]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Título" type="Label" parent="VBoxContainer" unique_id=714412542]
+layout_mode = 2
+text = "ATRAPADO POR EL DON"
+
+[node name="Frase" type="Label" parent="VBoxContainer" unique_id=1541447348]
+layout_mode = 2
+text = "El Código Orca no perdona errores."
+
+[node name="LabelPuntaje" type="Label" parent="VBoxContainer" unique_id=1568035658]
+layout_mode = 2
+text = "Distancia: 0m"
+
+[node name="LabelRecord" type="Label" parent="VBoxContainer" unique_id=1134680747]
+layout_mode = 2
+text = "Mejor Récord: 0m"
+
+[node name="BotonReintentar" type="Button" parent="VBoxContainer" unique_id=2080316168]
+layout_mode = 2
+text = "Reintentar"
+
+[node name="BotonMenu" type="Button" parent="VBoxContainer" unique_id=1503749277]
+layout_mode = 2
+text = "Menú Principal"
+
+[connection signal="pressed" from="VBoxContainer/BotonReintentar" to="." method="_on_boton_reintentar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonMenu" to="." method="_on_boton_menu_pressed"]
