@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://cjtn5qbqtpyv3"
+AudioManager="*uid://cwj3fgwpid4uo"
 
 [physics]
 

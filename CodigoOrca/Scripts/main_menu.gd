@@ -18,13 +18,16 @@ func _on_boton_jugar_pressed():
 	
 # 2. BOTÓN CRÉDITOS: Mostrar nombres del equipo
 func _on_boton_creditos_pressed():
+	AudioManager.get_node("SFXClick").play()
 	panel_creditos.visible = true
 
 # 3. BOTÓN VOLVER: Regresar al menú principal desde créditos
 func _on_boton_volver_pressed():
+	AudioManager.get_node("SFXClick").play()
 	panel_creditos.visible = false
 
 # 4. BOTÓN SALIR: Cerrar la aplicación
 func _on_boton_salir_pressed():
+	AudioManager.get_node("SFXClick").play()
 	print("Saliendo... El Don ha ganado esta vez.")
 	get_tree().quit()

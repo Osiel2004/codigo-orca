@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwj3fgwpid4uo"]
+
+[ext_resource type="AudioStream" uid="uid://yakn1d3t7lki" path="res://CodigoOrca/Audio/Fondo.mp3" id="1_hctym"]
+[ext_resource type="AudioStream" uid="uid://dqxy7w42uxqih" path="res://CodigoOrca/Audio/bubble-pop.mp3" id="2_rs70t"]
+
+[node name="AudioManager" type="Node" unique_id=747091149]
+
+[node name="MusicaFondo" type="AudioStreamPlayer" parent="." unique_id=2119456835]
+process_mode = 3
+stream = ExtResource("1_hctym")
+volume_db = -10.477
+autoplay = true
+
+[node name="SFXClick" type="AudioStreamPlayer" parent="." unique_id=1816721842]
+stream = ExtResource("2_rs70t")
+autoplay = true

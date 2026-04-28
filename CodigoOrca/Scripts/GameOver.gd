@@ -25,6 +25,7 @@ func mostrar_game_over():
 # --- BOTONES ---
 
 func _on_boton_reintentar_pressed():
+	AudioManager.get_node("SFXClick").play()
 	# 1. Quitamos la pausa
 	get_tree().paused = false
 	# 2. ¡IMPORTANTE!: Le decimos al GameManager que reinicie sus variables
@@ -33,6 +34,7 @@ func _on_boton_reintentar_pressed():
 	get_tree().reload_current_scene()
 
 func _on_boton_menu_pressed():
+	AudioManager.get_node("SFXClick").play()
 	# Quitamos la pausa y volvemos al inicio
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://CodigoOrca/Scenes/Menus/main_menu.tscn")
