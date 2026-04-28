@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 GlobalVariables="*uid://caj1f55bue4sb"
 GameEvents="*uid://w83mudv2qyby"
 
+[global_group]
+
+coliderDestroyer="objetos que destruyen a quienes colisionan con el"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

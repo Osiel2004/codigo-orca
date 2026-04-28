@@ -18,13 +18,13 @@ func _process(delta: float) -> void:
 	
 func creaturePreload(): #precargar criaturas
 	player = preload("res://personajes/panfiloCamaron.tscn").instantiate() #panfilo (PC)
-	enemyCreature = preload("res://personajes/enemigo1.tscn").instantiate() #Criatura
 	pass
 
 func playerSpawn(): #aparecer Jugador
 	add_child(player)
-	player.set_global_position($railPath/areaMiddle/middleRail.global_position)
+	player.set_global_position($railPaths/areaMiddle/middleRail.global_position)
 	pass
 
 func gameSetup(): #inicializar variables de juego custom
+	GlobalVariables.spawnFrecuency = 2
 	pass
