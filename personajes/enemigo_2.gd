@@ -28,7 +28,16 @@ func check_collisions():
 	for i in body.get_slide_collision_count():
 		var collision = body.get_slide_collision(i)
 		var coliderObject = collision.get_collider()
-		GameEvents.colisionEvent.emit(self.name,coliderObject.name,"damage",1)
+		
+		# Info de comportamiento de colisiones
+		var signalData = {
+			"colider": self.name,
+			"object":coliderObject.name,
+			"type": "death",
+			"value": 0
+		}
+		#dato de Colisiones
+		GameEvents.colisionEvent.emit(signalData)
 		
 		if coliderObject.is_in_group("coliderDestroyer"):
 			queue_free()

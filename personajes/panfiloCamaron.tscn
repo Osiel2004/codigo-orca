@@ -6,7 +6,7 @@
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_q52op"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=399954314 groups=["coliderDestroyer"]]
+[node name="playerPanfiloCamaron" type="CharacterBody2D" unique_id=399954314 groups=["coliderDestroyer"]]
 slide_on_ceiling = false
 script = ExtResource("1_q52op")
 
