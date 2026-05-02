@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b60sn2vu28h7v"]
+
+[ext_resource type="Script" uid="uid://c26qy7hhty47d" path="res://personajes/enemigo_1.gd" id="1_kgbu5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eh8gq"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_eh8gq"]
+
+[node name="enemigo1" type="Node2D" unique_id=659647740]
+script = ExtResource("1_kgbu5")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=658750581]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=67883161]
+shape = SubResource("CapsuleShape2D_eh8gq")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=957604637]
+position = Vector2(4.7683716e-07, -4.7683716e-07)
+scale = Vector2(32, 31.999998)
+texture = SubResource("PlaceholderTexture2D_eh8gq")

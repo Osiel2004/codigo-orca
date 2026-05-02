@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://cjtn5qbqtpyv3"
 AudioManager="*uid://cwj3fgwpid4uo"
+GlobalVariables="*uid://caj1f55bue4sb"
+GameEvents="*uid://w83mudv2qyby"
+GameColisions="*uid://bxwxq0fdyhxga"
+
+[global_group]
+
+coliderDestroyer="objetos que destruyen a quienes colisionan con el"
 
 [physics]
 
