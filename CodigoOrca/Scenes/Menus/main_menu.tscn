@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bgha3lmmcqpkd"]
 
-[ext_resource type="Script" uid="uid://p4u5g5rcm1d4" path="res://CodigoOrca/Scripts/main_menu.gd" id="1_c4o5c"]
+[ext_resource type="Script" uid="uid://p4u5g5rcm1d4" path="res://CodigoOrca/Scripts/uiScripts/main_menu.gd" id="1_c4o5c"]
 [ext_resource type="Texture2D" uid="uid://bch453cy3kpqt" path="res://CodigoOrca/Art/fondomenu.jpg" id="2_c4o5c"]
 
 [node name="MainMenu" type="Control" unique_id=983962232]

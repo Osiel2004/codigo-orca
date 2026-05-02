@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2cmig8njr1xv"]
 
-[ext_resource type="Script" uid="uid://bkhcnefof72i6" path="res://niveles/Scripts/creatureScripts/playerControl.gd" id="1_q52op"]
+[ext_resource type="Script" uid="uid://bkhcnefof72i6" path="res://CodigoOrca/Scripts/creatureScripts/playerControl.gd" id="1_q52op"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v31df"]
 

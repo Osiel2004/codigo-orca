@@ -5,7 +5,7 @@ extends Node2D
 # desde el Inspector de Godot, sin importar en qué nivel estés.
 @export var rail_paths_node: Node2D 
 @onready var timer_spawn = Timer.new()
-var creatures = [preload("res://personajes/enemigo1.tscn"),preload("res://personajes/enemigo2.tscn")]
+var creatures = [preload("res://CodigoOrca/personajes/enemigo1.tscn"),preload("res://CodigoOrca/personajes/enemigo2.tscn")]
 
 func _ready():
 	# Verificación de seguridad: si no asignaste el nodo en el inspector, intenta buscarlo

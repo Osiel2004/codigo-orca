@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bncr8e3dkeapp"]
 
-[ext_resource type="Script" uid="uid://c2p85r4ihatrr" path="res://CodigoOrca/Scripts/GameOver.gd" id="1_b71ja"]
+[ext_resource type="Script" uid="uid://c2p85r4ihatrr" path="res://CodigoOrca/Scripts/uiScripts/GameOver.gd" id="1_b71ja"]
 
 [node name="GameOver" type="CanvasLayer" unique_id=1084479097]
 process_mode = 3

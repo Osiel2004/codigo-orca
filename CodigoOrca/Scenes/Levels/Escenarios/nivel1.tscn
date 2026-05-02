@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://gnlxj5pn2crn"]
 
-[ext_resource type="Script" uid="uid://bollb41usr15q" path="res://niveles/Scripts/gameScripts/nivel1.gd" id="1_77qk4"]
-[ext_resource type="Script" uid="uid://bp0iu6gbbw83u" path="res://niveles/Escenarios/area_bottom.gd" id="2_qia1t"]
-[ext_resource type="Script" uid="uid://cr7eyef5tb5rg" path="res://niveles/Escenarios/area_middle.gd" id="3_csplp"]
-[ext_resource type="Script" uid="uid://d0mys2kgmj37" path="res://niveles/Escenarios/area_upper.gd" id="4_tgwg2"]
-[ext_resource type="PackedScene" uid="uid://eqhbp6xn2k2y" path="res://niveles/Scripts/gameScripts/logic_spawn_node.tscn" id="5_tgwg2"]
+[ext_resource type="Script" uid="uid://bollb41usr15q" path="res://CodigoOrca/Scripts/gameScripts/nivel1.gd" id="1_77qk4"]
+[ext_resource type="Script" uid="uid://bp0iu6gbbw83u" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_bottom.gd" id="2_qia1t"]
+[ext_resource type="Script" uid="uid://cr7eyef5tb5rg" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_middle.gd" id="3_csplp"]
+[ext_resource type="Script" uid="uid://d0mys2kgmj37" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_upper.gd" id="4_tgwg2"]
+[ext_resource type="PackedScene" uid="uid://eqhbp6xn2k2y" path="res://CodigoOrca/Scripts/gameScripts/logic_spawn_node.tscn" id="5_tgwg2"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cdlty"]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b60sn2vu28h7v"]
 
-[ext_resource type="Script" uid="uid://c26qy7hhty47d" path="res://personajes/enemigo_1.gd" id="1_kgbu5"]
+[ext_resource type="Script" uid="uid://c26qy7hhty47d" path="res://CodigoOrca/personajes/enemigo_1.gd" id="1_kgbu5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eh8gq"]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ca2i68y4ayjt7"]
 
-[ext_resource type="Script" uid="uid://by67cbnoererh" path="res://CodigoOrca/Scripts/PauseMenu.gd" id="1_s3ist"]
+[ext_resource type="Script" uid="uid://by67cbnoererh" path="res://CodigoOrca/Scripts/uiScripts/PauseMenu.gd" id="1_s3ist"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=2060328147]
 process_mode = 3

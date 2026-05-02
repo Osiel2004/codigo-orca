@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlp6bijm0ytee"]
 
-[ext_resource type="Script" uid="uid://djg6r51tvm7d8" path="res://CodigoOrca/Scripts/world.gd" id="1_8aaco"]
+[ext_resource type="Script" uid="uid://djg6r51tvm7d8" path="res://CodigoOrca/Scripts/levelScripts/world.gd" id="1_8aaco"]
 [ext_resource type="Texture2D" uid="uid://c7olnhr8hsaws" path="res://CodigoOrca/Art/underwater-fantasy-preview.png" id="2_4e3xa"]
 [ext_resource type="PackedScene" uid="uid://ciyv0wd7lme75" path="res://CodigoOrca/Scenes/Prefabs/hud.tscn" id="3_4e3xa"]
 [ext_resource type="PackedScene" uid="uid://ca2i68y4ayjt7" path="res://CodigoOrca/Scenes/Prefabs/pause_menu.tscn" id="4_6s65c"]
