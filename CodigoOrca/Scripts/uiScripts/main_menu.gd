@@ -14,7 +14,7 @@ func _on_boton_jugar_pressed():
 	# Llamamos a nuestro nuevo Autoload para que empiece a contar
 	GameManager.iniciar_carrera()
 	
-	get_tree().change_scene_to_file("res://CodigoOrca/Scenes/Levels/World.tscn")
+	get_tree().change_scene_to_file("res://CodigoOrca/Levels/world.tscn")
 	
 # 2. BOTÓN CRÉDITOS: Mostrar nombres del equipo
 func _on_boton_creditos_pressed():

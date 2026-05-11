@@ -47,4 +47,4 @@ func _on_boton_salir_pressed():
 	# 2. Quitar la pausa
 	get_tree().paused = false
 	# 3. Volver al menú principal (Verifica las mayúsculas de tu archivo real)
-	get_tree().change_scene_to_file("res://CodigoOrca/Scenes/Menus/main_menu.tscn")
+	get_tree().change_scene_to_file("res://CodigoOrca/Menus/main_menu.tscn")

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://ciyv0wd7lme75" path="res://CodigoOrca/Menus/ui/hud.tscn" id="3_4e3xa"]
 [ext_resource type="PackedScene" uid="uid://ca2i68y4ayjt7" path="res://CodigoOrca/Menus/ui/pause_menu.tscn" id="4_6s65c"]
 [ext_resource type="PackedScene" uid="uid://bncr8e3dkeapp" path="res://CodigoOrca/Menus/ui/GameOver.tscn" id="5_tjsc0"]
+[ext_resource type="PackedScene" uid="uid://gnlxj5pn2crn" path="res://CodigoOrca/Levels/rieles/rielSystem.tscn" id="6_ixxac"]
 
 [node name="World" type="Node2D" unique_id=1808898138]
 script = ExtResource("1_8aaco")
@@ -30,3 +31,6 @@ visible = false
 
 [node name="GameOver" parent="." unique_id=1084479097 instance=ExtResource("5_tjsc0")]
 visible = false
+
+[node name="railSystemNode" parent="." unique_id=87353510 instance=ExtResource("6_ixxac")]
+position = Vector2(-16, 293)

@@ -37,4 +37,4 @@ func _on_boton_menu_pressed():
 	AudioManager.get_node("SFXClick").play()
 	# Quitamos la pausa y volvemos al inicio
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://CodigoOrca/Scenes/Menus/main_menu.tscn")
+	get_tree().change_scene_to_file("res://CodigoOrca/Menus/main_menu.tscn")

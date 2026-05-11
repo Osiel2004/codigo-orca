@@ -10,15 +10,15 @@
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_csplp"]
 normal = Vector2(1, 0)
-distance = 64.0
+distance = -1.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tgwg2"]
 normal = Vector2(-1, 0)
-distance = -768.0
+distance = -1352.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3ycmj"]
 normal = Vector2(0, 1)
-distance = -320.0
+distance = -114.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_akyvv"]
 size = Vector2(96, 48)
@@ -36,11 +36,12 @@ script = ExtResource("1_ky1o8")
 position = Vector2(0, 256)
 
 [node name="bottom" type="CollisionShape2D" parent="levelBorders" unique_id=1529332275 groups=["coliderDestroyer"]]
-position = Vector2(256, 0)
+position = Vector2(256, 188)
 shape = SubResource("WorldBoundaryShape2D_cdlty")
 debug_color = Color(0.9866461, 0, 0.32626522, 0.41960785)
 
 [node name="left" type="CollisionShape2D" parent="levelBorders" unique_id=1334559015 groups=["coliderDestroyer"]]
+visible = false
 shape = SubResource("WorldBoundaryShape2D_csplp")
 debug_color = Color(0.639087, 0.37539935, 0.9298973, 0.41960785)
 
@@ -48,6 +49,7 @@ debug_color = Color(0.639087, 0.37539935, 0.9298973, 0.41960785)
 shape = SubResource("WorldBoundaryShape2D_tgwg2")
 
 [node name="top" type="CollisionShape2D" parent="levelBorders" unique_id=620795812 groups=["coliderDestroyer"]]
+position = Vector2(0, -346)
 shape = SubResource("WorldBoundaryShape2D_3ycmj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2048068664]
@@ -57,7 +59,7 @@ position = Vector2(584, 120)
 position = Vector2(64, 0)
 
 [node name="areaBottom" type="Area2D" parent="railPaths" unique_id=1632054741]
-position = Vector2(240, 160)
+position = Vector2(64, 256)
 script = ExtResource("2_reljx")
 
 [node name="bottomRail" type="Marker2D" parent="railPaths/areaBottom" unique_id=1688686960]
@@ -73,7 +75,7 @@ scale = Vector2(31.999985, 16.000015)
 texture = SubResource("PlaceholderTexture2D_csplp")
 
 [node name="bottomFoeSpawn" type="Marker2D" parent="railPaths/areaBottom" unique_id=1772842901]
-position = Vector2(360, 0)
+position = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="railPaths/areaBottom/bottomFoeSpawn" unique_id=174867764]
 position = Vector2(7.999999, 4.7683716e-07)
@@ -81,7 +83,7 @@ scale = Vector2(31.999998, 15.999999)
 texture = SubResource("PlaceholderTexture2D_3ycmj")
 
 [node name="areaMiddle" type="Area2D" parent="railPaths" unique_id=1647371530]
-position = Vector2(240, 96)
+position = Vector2(64, 96)
 script = ExtResource("3_c64em")
 
 [node name="middleRail" type="Marker2D" parent="railPaths/areaMiddle" unique_id=1292359013]
@@ -97,7 +99,7 @@ scale = Vector2(31.999985, 15.999999)
 texture = SubResource("PlaceholderTexture2D_tgwg2")
 
 [node name="middleFoeSpawn" type="Marker2D" parent="railPaths/areaMiddle" unique_id=1848705971]
-position = Vector2(360, 0)
+position = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="railPaths/areaMiddle/middleFoeSpawn" unique_id=180788838]
 position = Vector2(7.999999, 4.7683716e-07)
@@ -105,7 +107,7 @@ scale = Vector2(31.999998, 15.999999)
 texture = SubResource("PlaceholderTexture2D_3ycmj")
 
 [node name="areaUpper" type="Area2D" parent="railPaths" unique_id=2034193057]
-position = Vector2(240, 32)
+position = Vector2(64, -128)
 script = ExtResource("4_bjfre")
 
 [node name="upperRail" type="Marker2D" parent="railPaths/areaUpper" unique_id=1234444104]
@@ -121,7 +123,7 @@ scale = Vector2(31.999998, 15.999999)
 texture = SubResource("PlaceholderTexture2D_3ycmj")
 
 [node name="upperFoeSpawn" type="Marker2D" parent="railPaths/areaUpper" unique_id=1442915193]
-position = Vector2(360, 0)
+position = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="railPaths/areaUpper/upperFoeSpawn" unique_id=1932394085]
 position = Vector2(7.999999, 4.7683716e-07)
