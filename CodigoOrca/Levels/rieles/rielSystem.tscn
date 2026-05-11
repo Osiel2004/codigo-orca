@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://gnlxj5pn2crn"]
 
-[ext_resource type="Script" uid="uid://bollb41usr15q" path="res://CodigoOrca/Scripts/gameScripts/nivel1.gd" id="1_77qk4"]
-[ext_resource type="Script" uid="uid://bp0iu6gbbw83u" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_bottom.gd" id="2_qia1t"]
-[ext_resource type="Script" uid="uid://cr7eyef5tb5rg" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_middle.gd" id="3_csplp"]
-[ext_resource type="Script" uid="uid://d0mys2kgmj37" path="res://CodigoOrca/Scenes/Levels/Escenarios/area_upper.gd" id="4_tgwg2"]
-[ext_resource type="PackedScene" uid="uid://eqhbp6xn2k2y" path="res://CodigoOrca/Scripts/gameScripts/logic_spawn_node.tscn" id="5_tgwg2"]
+[ext_resource type="Script" uid="uid://bollb41usr15q" path="res://CodigoOrca/Scripts/levelScripts/railSystemScript.gd" id="1_ky1o8"]
+[ext_resource type="Script" uid="uid://bp0iu6gbbw83u" path="res://CodigoOrca/Levels/rieles/area_bottom.gd" id="2_reljx"]
+[ext_resource type="Script" uid="uid://cr7eyef5tb5rg" path="res://CodigoOrca/Levels/rieles/area_middle.gd" id="3_c64em"]
+[ext_resource type="Script" uid="uid://d0mys2kgmj37" path="res://CodigoOrca/Levels/rieles/area_upper.gd" id="4_bjfre"]
+[ext_resource type="PackedScene" uid="uid://eqhbp6xn2k2y" path="res://CodigoOrca/Scripts/spawnScripts/logic_spawn_node.tscn" id="5_6mlpv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cdlty"]
 
@@ -29,8 +29,8 @@ size = Vector2(96, 48)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_tgwg2"]
 
-[node name="Nivel1" type="Node2D" unique_id=87353510]
-script = ExtResource("1_77qk4")
+[node name="railSystemNode" type="Node2D" unique_id=87353510]
+script = ExtResource("1_ky1o8")
 
 [node name="levelBorders" type="StaticBody2D" parent="." unique_id=750306643 groups=["coliderDestroyer"]]
 position = Vector2(0, 256)
@@ -58,7 +58,7 @@ position = Vector2(64, 0)
 
 [node name="areaBottom" type="Area2D" parent="railPaths" unique_id=1632054741]
 position = Vector2(240, 160)
-script = ExtResource("2_qia1t")
+script = ExtResource("2_reljx")
 
 [node name="bottomRail" type="Marker2D" parent="railPaths/areaBottom" unique_id=1688686960]
 position = Vector2(8, 0)
@@ -82,7 +82,7 @@ texture = SubResource("PlaceholderTexture2D_3ycmj")
 
 [node name="areaMiddle" type="Area2D" parent="railPaths" unique_id=1647371530]
 position = Vector2(240, 96)
-script = ExtResource("3_csplp")
+script = ExtResource("3_c64em")
 
 [node name="middleRail" type="Marker2D" parent="railPaths/areaMiddle" unique_id=1292359013]
 position = Vector2(8, 0)
@@ -106,7 +106,7 @@ texture = SubResource("PlaceholderTexture2D_3ycmj")
 
 [node name="areaUpper" type="Area2D" parent="railPaths" unique_id=2034193057]
 position = Vector2(240, 32)
-script = ExtResource("4_tgwg2")
+script = ExtResource("4_bjfre")
 
 [node name="upperRail" type="Marker2D" parent="railPaths/areaUpper" unique_id=1234444104]
 position = Vector2(8, 0)
@@ -128,6 +128,6 @@ position = Vector2(7.999999, 4.7683716e-07)
 scale = Vector2(31.999998, 15.999999)
 texture = SubResource("PlaceholderTexture2D_3ycmj")
 
-[node name="logicSpawnNode" parent="railPaths" unique_id=1215805995 node_paths=PackedStringArray("rail_paths_node") instance=ExtResource("5_tgwg2")]
+[node name="logicSpawnNode" parent="railPaths" unique_id=1215805995 node_paths=PackedStringArray("rail_paths_node") instance=ExtResource("5_6mlpv")]
 position = Vector2(-64, 0)
 rail_paths_node = NodePath("..")

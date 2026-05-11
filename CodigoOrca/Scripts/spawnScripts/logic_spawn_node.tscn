@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://eqhbp6xn2k2y"]
 
-[ext_resource type="Script" uid="uid://cvm1tiigpsmeh" path="res://CodigoOrca/Scripts/gameScripts/enemySpawnLogic.gd" id="1_5b2a0"]
+[ext_resource type="Script" uid="uid://cvm1tiigpsmeh" path="res://CodigoOrca/Scripts/spawnScripts/enemySpawnLogic.gd" id="1_5b2a0"]
 
 [node name="logicSpawnNode" type="Node2D" unique_id=1215805995]
 script = ExtResource("1_5b2a0")

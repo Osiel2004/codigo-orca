@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 	pass
 	
 func creaturePreload(): #precargar criaturas
-	player = preload("res://personajes/panfiloCamaron.tscn").instantiate() #panfilo (PC)
+	player = preload("res://CodigoOrca/entidades/panfiloCamaron.tscn").instantiate() #panfilo (PC)
 	pass
 
 func playerSpawn(): #aparecer Jugador

@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://b60sn2vu28h7v"]
 
-[ext_resource type="Script" uid="uid://c26qy7hhty47d" path="res://CodigoOrca/personajes/enemigo_1.gd" id="1_kgbu5"]
+[ext_resource type="Script" uid="uid://c26qy7hhty47d" path="res://CodigoOrca/entidades/enemigos/enemigo_1.gd" id="1_8ibi1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eh8gq"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_eh8gq"]
 
 [node name="enemigo1" type="Node2D" unique_id=659647740]
-script = ExtResource("1_kgbu5")
+script = ExtResource("1_8ibi1")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=658750581]
 
